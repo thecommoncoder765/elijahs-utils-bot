@@ -14,6 +14,7 @@ client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}`)
 })
 
+client.slashcommands = new Discord.Collection()
 
 const token = process.env['TOKEN']
 client.login(token)
