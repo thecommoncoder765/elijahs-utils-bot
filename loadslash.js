@@ -23,6 +23,8 @@ client.on("ready", async () => {
     return console.error("Target guild not found")
 
   await guild.commands.set([...client.slashcommands.values()])
+  console.log(`Successfully loaded in ${client.slashcommands.size}`)
+  process.exit(0)
 })
 
 const token = process.env['TOKEN']
