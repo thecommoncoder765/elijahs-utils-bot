@@ -3,7 +3,13 @@ const Discord = require("discord.js")
 require("dotenv").config()
 
 const client = new Discord.Client({
-  intents: ["GUILDS"]
+  intents: [
+    "Guilds",
+    "GuildMessages",
+    "messageCreate",
+    "MessageContent"
+    "GuildMembers"
+  ],
 })
 
 let bot = {
