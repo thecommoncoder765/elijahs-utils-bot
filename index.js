@@ -6,9 +6,8 @@ const client = new Discord.Client({
   intents: [
     "Guilds",
     "GuildMessages",
-    "messageCreate",
     "MessageContent",
-    "GuildMembers",
+ //   "GuildMembers"
   ],
 })
 
