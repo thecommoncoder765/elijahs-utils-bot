@@ -9,9 +9,9 @@ const durations = [
   {name: "1 week", value: 7 * 24 * 60 * 60 * 1000},
 ]
 const run = async (client, interaction) => {
-  let member = interactions.options.getMember("user")
-  let duration = interactions.options.getNumber("duration")
-  let reason = interactions.options.getString("reason") || "No reason given"
+  let member = interaction.options.getMember("user")
+  let duration = interaction.options.getNumber("duration")
+  let reason = interaction.options.getString("reason") || "No reason given"
 
   if (!member) return interaction.reply("Invalid member")
 
